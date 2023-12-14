@@ -10,6 +10,13 @@ body {
   font-size: 1.6rem;
 }
 
+p a {
+  color: $body-color;
+  &:focus, &:hover {
+    text-decoration: none;
+  }
+}
+
 $header-height-desktop: 550px;
 $header-height-mobile: 375px;
 
