@@ -16,6 +16,6 @@ Added dummy text to top and bottom of accordion so can see the auto scroll to op
 
 `('b' + 'a' + + 'a' + 'a').toLowerCase()`
 
-The 2nd + attempts to do the maths version of plus and since the following 'a' is not a number, it results to NaN (not a number).
+The 3rd + attempts to do the maths version of plus and since the following 'a' is not a number, it results to NaN (not a number).
 
-baNaNa to lower case becomes `banana`
+`b + a + NaN + a` to lower case becomes `banana`
