@@ -5,10 +5,6 @@ function Tabs(props) {
 
     const [currentTab,setCurrentTab] = useState(0);
 
-    function timeout(delay) {
-        return new Promise( res => setTimeout(res, delay) );
-    }
-
     const accordionClick = (e,i) => {
         if(i === currentTab){
             setCurrentTab(-1)
@@ -27,19 +23,21 @@ function Tabs(props) {
 
     return (
         <div className='tabs'>
-            <div className="d-none d-md-block">
+            <ul className="list-unstyled mb-0 d-none d-md-flex">
             {props.data.map((item,i) => (
-            <button onClick={() => setCurrentTab(i)} className={`tabs__button--tabs ${i === currentTab ? "tabs__button--tabs--active" : ""}`} key={i}>{item.title}</button>
+            <li key={i}><button onClick={() => setCurrentTab(i)} className={`tabs__button--tabs ${i === currentTab ? "tabs__button--tabs--active" : ""}`} key={i}>{item.title} <span className='visually-hidden'>${i === currentTab ? " - active" : " - inactive"}</span></button></li>
         ))}
-            </div>
+            </ul>
+            <ul className='list-unstyled'>
         {props.data.map((item,i) => (
-            <div key={i}>
-            <button onClick={(e) => accordionClick(e,i)} className={`tabs__button--accordion d-block d-md-none ${i === currentTab ? "tabs__button--accordion--active" : ""} `}>{item.title}</button>
+            <li key={i}>
+            <button onClick={(e) => accordionClick(e,i)} className={`tabs__button--accordion d-block d-md-none ${i === currentTab ? "tabs__button--accordion--active" : ""} `}>{item.title} <span className='visually-hidden'>${i === currentTab ? " - collapse" : " - expand"}</span></button>
             { i === currentTab &&
                 <div dangerouslySetInnerHTML={{ __html: item.content }} className='tabs__content'></div>
             }
-            </div>
+            </li>
         ))}
+        </ul>
     </div>)
 }
 

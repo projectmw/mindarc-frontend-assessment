@@ -18,8 +18,10 @@ function Home() {
         <div className='row row-cols-1 row-cols-md-3 gx-5'>
           <div className="col d-flex">
             <div className='featured'>
-              <div className='featured__image' style={{ backgroundImage: `url(${require("../images/content-400x300.png")})` }}>
-                <span className='visually-hidden'>alt text for image</span>
+              <div className='featured__image'>
+                <picture>
+                  <img src={require("../images/content-400x300.png")} alt="" />
+                </picture>
               </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
               <Link to="/exercise2">Read more</Link>
@@ -27,8 +29,10 @@ function Home() {
           </div>
           <div className="col d-flex">
             <div className='featured'>
-              <div className='featured__image' style={{ backgroundImage: `url(${require("../images/content-400x300.png")})` }}>
-                <span className='visually-hidden'>alt text for image</span>
+              <div className='featured__image'>
+                <picture>
+                  <img src={require("../images/content-400x300.png")} alt="" />
+                </picture>
               </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <Link to="/exercise2">Read more</Link>
@@ -36,8 +40,10 @@ function Home() {
           </div>
           <div className="col d-flex">
             <div className='featured'>
-              <div className='featured__image' style={{ backgroundImage: `url(${require("../images/content-400x300.png")})` }}>
-                <span className='visually-hidden'>alt text for image</span>
+              <div className='featured__image'>
+                <picture>
+                  <img src={require("../images/content-400x300.png")} alt="" />
+                </picture>
               </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
               <Link to="/exercise2">Read more</Link>

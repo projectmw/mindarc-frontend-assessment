@@ -1,40 +1,21 @@
-Introduction
+Installation
 ---
-Thanks for taking the time to complete this frontend technical assessment. We will be focusing on software quality (scalability, readability, maintainability, etc.) and your eye for detail. You may include any libraries, but Vue.js is preferred and jQuery is not recommended. Along with following best practices, bonus points for following our [coding guidelines](https://github.com/mindarc/frontend-assessment/wiki/Coding-guidelines). 
+npm install
+
+npm run start
 
 Exercise 1
 ---
-Build a responsive page based on the designs.
+Tested on Chrome, Firefox, Safari and Edge.
 
-##### Requirements
-1. Match the designs exactly.
-2. Needs to be responsive.
-
-##### Designs
-* exercise1-desktop.png
-* exercise1-mobile.png
-
-##### Assets
-* Desktop banner - https://via.placeholder.com/1920x650
-* Mobile banner - https://via.placeholder.com/600x600
-* Content images - https://via.placeholder.com/400x300
+Click on any 'read more' link to go to exercise 2.
 
 Exercise 2
 ---
-Read the `data.json` file and display the data as tabs on desktop and an accordion on mobile.
+Added dummy text to top and bottom of accordion so can see the auto scroll to opened content on mobile.
 
-##### Requirements
-1. Display data in tabs on desktop.
-2. Display data in an accordion on mobile.
-3. Only 1 accordion/tab should be open at a time.
-4. Open the first accordion/tab on load.
-5. If the open accordion is selected, close it.
+`('b' + 'a' + + 'a' + 'a').toLowerCase()`
 
-###### Bonus points
-* Improve the user experience with meaningful animations/transitions.
-* Design and styling.
-* Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
+The 2nd + attempts to do the maths version of plus and since the following 'a' is not a number, it results to NaN (not a number).
 
-Submission
----
-We recommend submitting your completed assessment as a forked repository. Please replace README content with instructions and relevant documentation.
+baNaNa to lower case becomes `banana`
